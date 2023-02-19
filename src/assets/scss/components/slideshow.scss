@@ -1,0 +1,59 @@
+.slideshow {
+    position: relative;
+    display: flex;
+    width: 95%;
+    height: 415px;
+    background-position: center;
+    background-size: cover;
+    margin: 43px auto;
+    border-radius: 25px;
+
+    @media screen and (max-width: 650px) {
+        height: 255px;
+        margin: 20px auto;
+        border-radius: 10px;
+    }
+
+    &_arrow {
+        position: absolute;
+        top: 50%;
+        height: 23%;
+        transform: translateY(-50%);
+        cursor: pointer;
+
+        @media screen and (max-width: 650px) {
+            height: 18%;
+        }
+
+        &:active {
+            transform: translateY(-50%) scale(0.7);
+        }
+
+        &_back {
+            left: 25px;
+        }
+
+        &_forward {
+            right: 25px;
+        }
+    }
+
+    .slidesCounter {
+        position: absolute;
+        bottom: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: $primary;
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 142.6%;
+        display: flex;
+        align-items: flex-end;
+        text-align: center;
+
+        @media screen and (max-width: 650px) {
+            font-size: 18px;
+            line-height: 0;
+        }
+    }
+}

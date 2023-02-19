@@ -1,0 +1,57 @@
+.error {
+   max-width: 95%;
+   margin: 0 auto;
+   padding-bottom: 40px;
+   color: $secondary;
+
+   &_content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: calc(100vh - 280px);
+
+      &_title {
+         text-align: center;
+         line-height: 142.6%;
+         font-weight: 700;
+         font-size: 288px;
+
+         @media screen and (max-width: 900px) {
+            font-size: 150px;
+         }
+         @media screen and (max-width: 650px) {
+            font-size: 96px;
+         }
+      }
+
+      &_message {
+         text-align: center;
+         // line-height: 142.6%;
+         // margin: 51px 0;
+         font-weight: 500;
+         font-size: 36px;
+
+         @media screen and (max-width: 780px) {
+            font-size: 18px;
+            margin: 26px 0;
+
+         }
+      }
+
+      &_return {
+         display: block;
+         text-align: center;
+         // line-height: 142.6%;
+         // margin: 26px 0;
+         font-weight: 500;
+         font-size: 18px;
+         text-decoration: underline;
+
+         @media screen and (max-width: 780px) {
+            font-size: 14px;
+            margin: 20px 0;
+         }
+      }
+   }
+}

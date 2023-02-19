@@ -1,0 +1,52 @@
+.banner {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 95%;
+    height: 223px;
+    margin: 43px auto;
+    padding: 20px;
+    border-radius: 25px;
+    // opacity: 0.3;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../images/home_cover.png');
+    background-position: center;
+    background-size: cover;
+
+    @media screen and (max-width: 650px) {
+        margin: 20px auto;
+        height: 111px;
+    }
+
+    &_about {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        max-width: 95%;
+        height: 223px;
+        margin: 43px auto;
+        border-radius: 25px;
+        //  opacity: 0.3;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../images/about_cover.png');
+        background-position: center;
+        background-size: cover;
+
+        @media screen and (max-width: 650px) {
+            margin: 20px auto;
+            height: 111px;
+        }
+    }
+
+    p {
+        color: $primary;
+        font-size: 48px;
+        font-weight: 500;
+
+        @media screen and (max-width: 650px) {
+            font-size: 24px;
+        }
+    }
+}

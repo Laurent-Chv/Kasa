@@ -11,13 +11,19 @@ export default function Lodging() {
 
   let IdVerify = Boolean(false)
 
-  if (!dataLodgingId.length) {
-    IdVerify = false
-  } else {
+  // if (!dataLodgingId.length) {
+  //   IdVerify = false
+  // } else {
+  //   IdVerify = true
+  // }
+
+  // const id = IdVerify
+
+  // return id ? <Lodge /> : <LodgingError />
+
+  if (dataLodgingId.length) {
     IdVerify = true
   }
 
-  const id = IdVerify
-
-  return id ? <Lodge /> : <LodgingError />
+  return IdVerify ? <Lodge /> : <LodgingError />
 }

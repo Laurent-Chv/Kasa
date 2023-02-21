@@ -11,17 +11,6 @@ export default function Lodging() {
    const lodgingId = useParams('id').id;
    const dataLodgingId = LodgingList.filter(data => data.id === lodgingId);
 
-   // const title = dataLodgingId[0].title;
-   // const location = dataLodgingId[0].location;
-   // const hostFullName = dataLodgingId[0].host.name.split(' ');
-   // const hostFirstName = hostFullName[0];
-   // const hostName = hostFullName[1];
-   // const hostPicture = dataLodgingId[0].host.picture;
-   // const tags = dataLodgingId[0].tags;
-   // const rating = dataLodgingId[0].rating;
-   // const description = dataLodgingId[0].description;
-   // const equipments = dataLodgingId[0].equipments;
-
    const slidesPictures = dataLodgingId?.[0]?.pictures || []
 
    const { title, location, host, tags, rating, description, equipments

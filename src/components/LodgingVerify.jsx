@@ -1,10 +1,10 @@
 import React from 'react'
 import { useParams } from 'react-router'
 import LodgingList from '../datas/LodgingList'
-import Lodge from "../pages/Lodge"
-import LodgingError from '../utils/LodgingError';
+import Lodging from "../pages/Lodging"
+import NavToError from '../utils/NavToError';
 
-export default function Lodging() {
+export default function LodgingVerify() {
 
   const lodgingId = useParams('id').id;
   const dataLodgingId = LodgingList.filter(data => data.id === lodgingId);
@@ -15,5 +15,5 @@ export default function Lodging() {
     IdVerify = true
   }
 
-  return IdVerify ? <Lodge /> : <LodgingError />
+  return IdVerify ? <Lodging /> : <NavToError />
 }

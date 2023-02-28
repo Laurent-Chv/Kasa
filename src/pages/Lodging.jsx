@@ -40,8 +40,8 @@ export default function Lodging() {
                <div className="lodging_content_host">
                   <div>
                      <div className='lodging_content_host_name'>
-                        <span>{hostFirstName}</span>
-                        <span>{hostName}</span>
+                        <p>{hostFirstName}</p>
+                        <p>{hostName}</p>
                      </div>
                      <img
                         className='lodging_content_host_picture'

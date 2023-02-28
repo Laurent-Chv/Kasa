@@ -9,8 +9,7 @@ export default function Footer() {
   return (
     <footer className='footer'>
       <img className='footer_logo' src={logo} alt="logo de Kasa : agence de location d'appartements entre particuliers" />
-      <div className='footer_copyright'>{copyright}</div>
+      <p className='footer_copyright'>{copyright}</p>
     </footer>
   )
 }
-

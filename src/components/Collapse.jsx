@@ -9,13 +9,13 @@ export default function Collapse({ title, content }) {
    return (
       <>
          <div className="collapse" >
-            <h3 className='collapse_title lodging_collapse_title' onClick={() => setToggle(!toggle)} >
+            <h2 className='collapse_title lodging_collapse_title' onClick={() => setToggle(!toggle)} >
                {title}
                <img className={toggle ? 'arrow arrow_up' : 'arrow arrow_down'}
                   src={arrow}
                   alt="Le contenu apparaît"
                />
-            </h3>
+            </h2>
             <div className={toggle ? 'collapse_content lodging_collapse_content' : 'collapse_content_hidden'}>
                {Array.isArray(content) ? content.map((item, index) => {
                   return (

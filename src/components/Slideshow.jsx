@@ -31,8 +31,8 @@ export default function Slideshow({ slidesPictures }) {
                />
                <img
                   className='slideshow_arrow slideshow_arrow_forward'
-                  alt="Affiche la slide suivante"
                   src={ArrowForward}
+                  alt="Affiche la slide suivante"
                   onClick={nextSlide}
                />
                <p className='slidesCounter'>{indexCounter + 1}/{slidesPictures.length}</p>
